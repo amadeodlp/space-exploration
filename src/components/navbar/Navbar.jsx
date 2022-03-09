@@ -20,7 +20,7 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='nav-links'>
               <Link to="/" className={"nav-link" + (url === "/" ? "-pressed" : "")}>00 HOME</Link>
-              <Link to="/destination/moon" state={{ destination: destinations.moon }} className={"nav-link" + (url.includes("destination") ? "-pressed" : "")}>02 DESTINATION</Link>
+              <Link to="/destination/moon" state={{ destination: destinations.moon }} className={"nav-link" + (url === "/destination/moon" ? "-pressed" : "")}>02 DESTINATION</Link>
               <Link to="/crew" className={"nav-link" + (url === "/crew" ? "-pressed" : "")}>01 CREW</Link>
               <Link to="/technology" className={"nav-link" + (url === "/technology" ? "-pressed" : "")}>03 TECHNOLOGY</Link>
             </Nav>

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Link, Outlet, useLocation } from "react-router-dom"
-import './destination.css'
-import '../navbar/navbar.css'
+// import './destination.css'
+// import '../navbar/navbar.css'
 import { destinations } from "./destinations"
 import { Navbar, Nav } from "react-bootstrap"
 

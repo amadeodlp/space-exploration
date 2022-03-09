@@ -8,7 +8,6 @@ import Crew from "./components/crew/crew";
 import Destination from "./components/destination/destination";
 import Technology from "./components/technology/technology";
 import DestinationDetail from "./components/destination/destinationDetail";
-import { destinations } from "./components/destination/destinations";
 
 const App = () => {
   return (
