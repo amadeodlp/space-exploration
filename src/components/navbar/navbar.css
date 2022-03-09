@@ -1,0 +1,45 @@
+.nav {
+    margin-top: 30px;
+    backdrop-filter: blur(120px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    flex: 2;
+    padding-left: 70px;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 70px;
+}
+
+.nav-link {
+    position: static;
+    color: #fff !important;
+    border-bottom: solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: solid grey;
+}
+
+.nav-link-pressed {
+    color: #fff !important;
+    border-bottom: solid #fff;
+}
+
+@media (max-width: 1130px) {
+    .nav-links {
+        gap: 35px;
+    }
+}

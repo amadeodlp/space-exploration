@@ -1,0 +1,87 @@
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+
+.title {
+    font-size: 150px;
+}
+
+.circle {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    height: 22vh;
+    width: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.circle:hover {
+    box-shadow:  0 0 0 50px rgb(174, 179, 184);
+}
+
+.explore-text {
+    font-size: 30px;
+}
+
+.pres-text {
+    font-size: 100%;
+    transition: 1s;
+}
+
+.pres-text:hover {
+    font-size: 110%
+}
+
+.presentation {
+    cursor: default;
+    margin-top: 150px;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .presentation {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .home {
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+    }
+
+    .pres-text {
+        font-size: 75%;
+    }
+
+    .title {
+        padding: 10px;
+        font-size: 100px;
+    }
+}

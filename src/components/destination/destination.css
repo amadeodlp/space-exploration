@@ -1,0 +1,70 @@
+.destination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    overflow: auto;
+}
+
+.dest-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 14vh;
+    max-width: 60%;
+    gap: 250px;
+}
+
+.dest-title {
+    flex: 1;
+    text-align: left;
+    padding-top: 18vh;
+    padding-right: 50vw;
+
+}
+
+.dest-nav {
+    position: absolute;
+    margin: auto;
+    padding-bottom: 40vh;
+    padding-left: 28vw;
+}
+
+.dest-description {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 30%;
+}
+
+ .dest-name {
+    font-size: 100px;
+}
+
+.distance-and-time {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .destination {
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+    }
+}
+
+@media (max-width: 480px) {
+    .destination {
+        background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    }
+}
